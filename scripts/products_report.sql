@@ -1,7 +1,7 @@
 /*
-===========================================================================================
-🎯 PURPOSE: Product Sales Performance Aggregation Report
-===========================================================================================
+====================================================================================
+📊 Purpose: Create `gold.report_products` View for Product Analytics & Segmentation
+====================================================================================
 
 This script generates a product-level sales performance report using data from 
 `gold.fact_sales` and `gold.dim_products`. It computes key metrics to help stakeholders 
