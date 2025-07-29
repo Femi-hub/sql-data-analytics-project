@@ -36,6 +36,14 @@ and revenue contribution across the product catalog.
 ===========================================================================================
 */
 
+-- Drop existing view if it exists
+IF OBJECT_ID('gold.report_products', 'V') IS NOT NULL
+    DROP VIEW gold.report_products;
+GO
+
+-- Create the product report view
+CREATE VIEW gold.report_products AS
+
 -- Create a base table that joins sales data with product information
 WITH base_table AS (
 	SELECT 
